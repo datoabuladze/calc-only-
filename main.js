@@ -1,6 +1,31 @@
-function main() {
-  let num1 = document.getElementById("number1").value;
-  let num2 = document.getElementById("number2").value;
-  let jami = (document.getElementById("pas").innerHTML =
-    Number(num1) + Number(num2));
+function bechdva(ricx) {
+  let pasx = document.getElementById("jami");
+
+  pasx.value += ricx.innerHTML;
+}
+function toloba() {
+  let pasx = document.getElementById("jami");
+  let txt = pasx.value;
+  let nms;
+  if (txt.includes("+")) {
+    nms = txt.split("+");
+    let shedeg = Number(nms[0]) + Number(nms[1]);
+    pasx.value = shedeg;
+  } else if (txt.includes("-")) {
+    nms = txt.split("-");
+    let shedeg = Number(nms[0]) - Number(nms[1]);
+    pasx.value = shedeg;
+  } else if (txt.includes("*")) {
+    nms = txt.split("*");
+    let shedeg = Number(nms[0]) * Number(nms[1]);
+    pasx.value = shedeg;
+  } else if (txt.includes("/")) {
+    nms = txt.split("/");
+    let shedeg = Number(nms[0]) / Number(nms[1]);
+    pasx.value = shedeg;
+  }
+}
+function washla() {
+  let pasx = document.getElementById("jami");
+  pasx.value = "";
 }

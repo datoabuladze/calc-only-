@@ -3,27 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>კალკულატორი</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="form">
-      <input
-        type="number"
-        name="number"
-        id="number1"
-        placeholder="შეიყვანე რიცხვი"
-      />
-      <input
-        type="number"
-        name="number2"
-        id="number2"
-        placeholder="შეიყვანე რიცხვი"
-      />
+    <div class="calc">
+      <div class="calc-inner">
+        <input type="text" id="jami" placeholder="0" readonly />
 
-      <button onclick="main()">დაიანგარიშე</button>
+        <div class="numbers">
+          <div class="num">
+            <div class="wrap-0">
+              <h1 onclick="bechdva(this)">/</h1>
+              <h1 onclick="bechdva(this)">*</h1>
+              <h1 onclick="bechdva(this)">+</h1>
+              <h1 onclick="bechdva(this)">-</h1>
+            </div>
+            <div class="wrap-1">
+              <h1 onclick="bechdva(this)">7</h1>
+              <h1 onclick="bechdva(this)">8</h1>
+              <h1 onclick="bechdva(this)">9</h1>
+            </div>
+            <div class="wrap-1">
+              <h1 onclick="bechdva(this)">4</h1>
+              <h1 onclick="bechdva(this)">5</h1>
+              <h1 onclick="bechdva(this)">6</h1>
+            </div>
+            <div class="wrap-1">
+              <h1 onclick="bechdva(this)">1</h1>
+              <h1 onclick="bechdva(this)">2</h1>
+              <h1 onclick="bechdva(this)">3</h1>
+            </div>
+            <div class="wrap-1">
+              <h1 onclick="washla()">C</h1>
+              <h1 onclick="bechdva(this)">0</h1>
+              <h1 onclick="bechdva(this)">.</h1>
+            </div>
+          </div>
+          <div class="toloba">
+            <h1 onclick="toloba()">=</h1>
+          </div>
+        </div>
+      </div>
     </div>
-    <h1 id="pas">აქ იქნება პასუხი</h1>
     <script src="main.js"></script>
   </body>
 </html>
